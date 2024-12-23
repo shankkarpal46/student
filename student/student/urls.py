@@ -27,7 +27,7 @@ urlpatterns = [
     path('display-student/',views.Student_ListView.as_view(),name="display-student"),
     path('update-student/<str:pk>',views.Student_UpdateView.as_view(),name= "update-student"),
     path('delete-student/<str:pk>',views.DeleteView.as_view(),name = "delete-student"),
-    path('login/',views.User_Login.as_view(),name = "login"),
+    path('',views.User_Login.as_view(),name = "login"),
     path('logout/',views.User_Logout.as_view(),name = "logout"),
 ]
 
